@@ -1,7 +1,9 @@
 // creating a variable for the user's answer
+
 const answer1 = prompt(`What is the highest mountain in Africa?:  `)
  const correctAnswer1 = "KILIMANJARO"
  let correctAnswers = 0;
+ 
 if(answer1.toUpperCase() === correctAnswer1){
     
     
@@ -51,6 +53,8 @@ if(answer5.toUpperCase() === correctAnswer5){
 }else{
     alert(`Your answer is wrong`)
 }
+
+
 alert(`You have got ${correctAnswers} answers right`);
 let totalanswers = 5;
 let percent = (correctAnswers/totalanswers) * 100;
