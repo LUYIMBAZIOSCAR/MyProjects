@@ -8,7 +8,7 @@ if(answer1.toUpperCase() === correctAnswer1){
     
     
     alert(`You are right`)
-    correctAnswers++;
+    correctAnswer1++;
     
 }else{
     alert(`Your answer is wrong`)
@@ -50,6 +50,20 @@ if(answer5.toUpperCase() === correctAnswer5){
     
     alert(`You are right`)
     correctAnswers++;
+}else{
+    alert(`Your answer is wrong`)
+}
+
+const answer6 = prompt(`Who is the president of Uganda?:  `)
+ const correctAnswer6 = "BOBI WINE"
+
+ 
+if(answer6.toUpperCase() === correctAnswer6){
+    
+    
+    alert(`You are right`)
+    correctAnswer1++;
+    
 }else{
     alert(`Your answer is wrong`)
 }
