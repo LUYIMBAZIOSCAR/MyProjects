@@ -1,0 +1,11 @@
+* {
+  background-color: palegreen;
+}
+.container {
+  background-color: thistle;
+  margin: 10px 200px;
+  text-align: center;
+}
+button {
+  margin: 10px 20px;
+}

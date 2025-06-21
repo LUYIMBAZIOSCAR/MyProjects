@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -26,9 +31,24 @@ img {
   background-color: white;
   padding: 20px;
 }
-.navbar .container {
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#list {
   display: flex;
 }
+.navbar ul li {
+  margin: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.navlink:hover {
+  color: var(--primary-color);
+}
+
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -43,4 +63,32 @@ img {
   margin: 0 auto;
   /* This centers the container */
   padding: 0 15px;
+}
+/* Buttons */
+.btn {
+  display: inline-block;
+
+  background-color: var(--light-color);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+
+}
+.btn-block{
+  display: block;
+  width: 100%;
 }
